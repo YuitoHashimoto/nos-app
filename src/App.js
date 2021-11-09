@@ -1,14 +1,15 @@
 import './App.css';
-import{ Home } from './components/index';
+import{ Home,Todo } from './components/index';
 import {Routes, Route } from 'react-router-dom';
+// import firebase from './firebase';
 
 function App() {
   return (
     <>
-      <h1>初期</h1>
+      <h1>コンポーネント</h1>
         <Routes>
           <Route path="/" element={<Home />}/>
-          <Route path="/about" element={<h1>あああ</h1>}/>
+          <Route path="/todo" element={<Todo />}/>
       </Routes>
     </>
   );

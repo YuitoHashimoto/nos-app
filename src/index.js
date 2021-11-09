@@ -5,24 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
-// firebase
-import * as firebase from 'firebase/app';
-import 'firebase/auth';
-import 'firebase/firestore';
-import 'firebase/database';
-
-const firebaseConfig = {
-  apiKey: "AIzaSyDZH-b4c-1v1kpffTb3seDu2E4Imfa-2SY",
-  authDomain: "nost-6d650.firebaseapp.com",
-  projectId: "nost-6d650",
-  storageBucket: "nost-6d650.appspot.com",
-  messagingSenderId: "274610504155",
-  appId: "1:274610504155:web:14781fe14e2d491876a7fe",
-  measurementId: "G-5XQQFWFGFC"
-};
-
-firebase.initializeApp(firebaseConfig)
-
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
