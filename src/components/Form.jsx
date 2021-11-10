@@ -8,7 +8,7 @@ const Form = () => {
         setTitle(e.target.value)
     }
     const createTodo = () => {
-        const todoRef = firebase.database().ref('Todo');
+        const todoRef = firebase.database().ref();
         console.log(todoRef);
         const todo = {
             title,
