@@ -1,0 +1,27 @@
+@import "_ress", "_common";
+
+// LoadView
+.loading {
+    width: 100vw;
+    height: calc(100vh - 2.50rem);
+    padding: 4.8rem 0 0 0;
+    &__imgs {
+        width: 100%;
+        height: 10.4rem;
+        margin: 1.6rem 0 0 0;
+        display: flex;
+        justify-content: space-around;
+        &__content {
+            background: gray;
+            width: 10.4rem;
+            height: 10.4rem;
+            border-radius: 50%;
+        }
+    }
+    .imgsBottom {
+        margin: 0 0 2.6rem 0;
+    }
+    &__txt {
+        height: calc(100%);
+    }
+}
