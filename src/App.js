@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/load' element={<LoadView />} />
+        <Route path='/' element={<LoadView />} />
       </Routes>
     </>
   );
