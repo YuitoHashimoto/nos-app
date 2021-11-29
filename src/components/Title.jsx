@@ -1,11 +1,13 @@
+import { StartBtn, TitleLogo } from './icons/index'
+
 const Title = () => {
     return (
         <main className={'title'}>
-            <div>
-                <p></p>
-                <div></div>
+            <div className={'title__logo'}>
+                <p className={'title__logo__txt'}>アイテム奪い合いクイズゲーム</p>
+                <TitleLogo />
             </div>
-            <button></button>
+            <StartBtn />
         </main>
     )
 }
