@@ -1,5 +1,13 @@
 @import "_ress", "_common";
 
+// テスト用
+.urls {
+    font-size: 3.0rem;
+    display: flex;
+    flex-direction: column;
+}
+// テスト用
+
 @mixin stripeBack {
     background: repeating-linear-gradient(-45deg,#C9EAFF 0,#C9EAFF 20px,#DEF2FF 20px,#DEF2FF 40px);
 }
@@ -13,6 +21,103 @@ main {
     position: absolute;
     bottom: 19.0rem;
 }
+
+// Head & Foot
+.homeHead {
+    height: 6.5rem;
+    background: #FF9239;
+    display: flex;
+    align-items: center;
+    &__content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        &__xpBar {
+            position: relative;
+            width: 16.7rem;
+            height: 5.8rem;
+            display: flex;
+            align-items: center;
+            margin: 0 0 0 2.4rem;
+            .xpTxt {
+                position: absolute;
+                left: 10.8rem;
+                top: 0;
+                color: #FFD76A;
+                font-size: 1.2rem;
+                text-align: right;
+            }
+             .bar {
+                 position: relative;
+                 &__circle {
+                     position: relative;
+                     z-index: 200;
+                     width: 4.1rem;
+                     height: 4.1rem;
+                     border-radius: 50%;
+                     background: #fff;
+                     border: solid #FFD76A 0.4rem;
+                     padding: 0.2rem 0 0 0;
+                     &__rank {
+                         position: absolute;
+                         top: -1.3rem;
+                         left: -0.2rem;
+                     }
+                     &__num {
+                         text-align: center;
+                          font-size: 2.0rem;
+                          color: #FF9239;
+                     }
+                 }
+                 &__box {
+                     width: 14.6rem;
+                     height: 1.5rem;
+                     background: #fff;
+                     border-radius: 0.4rem;
+                     position: absolute;
+                     left: 2.0rem;
+                     top: 1.2rem;
+                     z-index: 100;
+                     &__xp {
+                       width: 80%;
+                       height: 1.5rem;
+                       background: #FFD76A;
+                       border-radius: 0.4rem;
+                     }
+                 }
+             }
+        }
+        &__money {
+            width: 8.0rem;
+            height: 5.0rem;
+            background: #fff;
+            border-radius: 0.5rem;
+            padding: 0.6rem 0.7rem 0 0.2rem;
+            margin: 0 0 0 5.1rem;
+            .money {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 0 0 0.6rem;
+                text-align: right;
+            }
+            .ticket {
+                display: flex;
+                justify-content: space-between;
+                text-align: right;
+            }
+        }
+       &__alert {
+           margin: 0 0 0 1.2rem;
+       } 
+    }
+}
+.homeFoot {
+    background: #ABFEB1;
+   position: fixed;
+   bottom: 0;
+   height: 10.0rem;
+}
+// Head & Foot
 
 // LoadView
 .loading {
@@ -91,6 +196,7 @@ main {
     }
 }
 
+// charaSelect
 .charaSelect {
     padding: 4.2rem 2.4rem 9.2rem 2.4rem;
     @include stripeBack();
@@ -101,6 +207,7 @@ main {
         &__txt {
             font-size: 2.4rem;
             text-align: center;
+            margin: 18.5rem 0 4.8rem 0;
         }
         .selectArea {
             display: flex;
@@ -108,6 +215,7 @@ main {
             &__btn {
                 width: 15.8rem;
                 height: 20.6rem;
+                background: #fff;
                 input {
                     display: none;
                 }
@@ -117,6 +225,21 @@ main {
                     height: 100%;
                     border: solid 0.8rem #B2B3C1;
                     border-radius: 1.0rem;
+                    font-size: 2.2rem;
+                    font-weight: 100;
+                    text-align: center;
+                    padding: 1.0rem 0 0 0;
+                }
+                .humans {
+                    background: url('../img/humansIcon.svg');
+                    background-position: center;
+                    background-size: contain;
+                }
+                .animals {
+                    background: url('../img/animalsIcon.svg');
+                    background-position: center;
+                    background-size: contain;
+
                 }
                 input:checked + label {
                     border: solid 0.8rem #FF9239;
@@ -126,5 +249,174 @@ main {
                 margin: 0 1.6rem 0 0;
             }
         }
+    }
+}
+
+// charaComp
+.charaComp {
+    padding: 4.2rem 2.4rem 9.2rem 2.4rem;
+    @include stripeBack();
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__box {
+        &__txt {
+            font-size: 2.4rem;
+            text-align: center;
+            margin: 10.9rem 0 4.8rem 0;
+        }
+        &__chara {
+            width: 23.6rem;
+            height: 30.2rem;
+            border: solid 0.8rem #FF9239;
+            border-radius: 1.0rem;
+            background: #fff;
+
+            &__content {
+                width: 100%;
+                height: 100%;
+                background: url('../img/chara.svg');
+                background-repeat: no-repeat;
+                background-position-x: 34px;
+                background-position-y: 74px;
+                padding: 1.5rem 0 2.4rem 0;
+                p {
+                    font-size: 2.4rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .btnArea {
+        display: flex;
+        flex-direction: column;
+        bottom: 11.8rem;
+        svg:nth-child(1) {
+            margin: 0 0 1.6rem 0;
+        }
+    }
+}
+
+// Home
+.home {
+    background: url('../img/background.svg');
+    padding: 0 0 0 0;
+    &__content {
+        position: relative;
+        width: 39.7rem;
+        height: 32.2rem;
+        margin: 15.5rem auto 0 auto;
+        &__room {
+        }
+        &__icons {
+            position: absolute;
+            bottom: 0;
+            left: 1.0rem;
+            width: 6.5rem;
+            height: 14.8rem;
+        }
+    }
+    &__battle {
+        width: 20.0rem;
+        margin: 3.0rem auto 0 auto
+    }
+}
+
+// RoomCustom {
+.roomCustom {
+    position: relative;
+    background: url('../img/background.svg');
+    padding: 0 0 0 0;
+    .goodsIcon {
+        position: absolute;
+        top: 8.9rem;
+        right: 2.4rem;
+    }
+    &__content {
+        position: relative;
+        width: 39.7rem;
+        height: 32.2rem;
+        margin: 15.5rem auto 0 auto;
+    }
+    &__custom {
+        width: 20.0rem;
+        margin: 3.0rem auto 0 auto
+    }
+}
+
+// mypage
+.mypage {
+    @include stripeBack();
+    h1 {
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: 300;
+        margin: 3.2rem 0 0 0;
+    }
+    &__content {
+        height: calc(100% - 16.5rem);
+        overflow-y: scroll;
+        &__stats {
+            position: relative;
+            width: 36.6rem;
+            height: 13.6rem;
+            border-radius: 1.0rem;
+            margin: 1.6rem auto 0 auto;
+            padding: 1.2rem 0 0 0;
+
+            .overlay {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #8EAEC1;
+                mix-blend-mode: multiply;
+                border-radius: 1.0rem;
+            }
+            h2 {
+                position: relative;
+                z-index: 100;
+                text-align: center;
+                color: #fff;
+                font-size: 2.0rem;
+                font-weight: 100;
+                letter-spacing: 1.0rem;
+                padding: 1.2rem 0 0 0;
+            }
+            &__box {
+                position: relative;
+                z-index: 100;
+                display: flex;
+                justify-content: space-around;
+                padding: 0.8rem 0.5rem 0 1.8rem;
+                .statsCircle {
+                    text-align: center;
+                    width: 6.9rem;
+                    height: 6.9rem;
+                    background: #fff;
+                    border-radius: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    p {
+                        font-size: 2.4rem;
+                        font-weight: 100;
+                        color: #FF506F;
+                    }
+                    h3 {
+                        font-weight: 100;
+                    }
+                }
+                .statsTxt {
+                    text-align: left;
+                    font-size: 1.2rem;
+                    span {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+    .homeFoot {
+        background: none;
     }
 }

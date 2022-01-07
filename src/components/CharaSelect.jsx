@@ -8,11 +8,11 @@ const CharaSelect = () => {
                 <div className={'selectArea'}>
                     <div className={'selectArea__btn'}>
                         <input type="radio" name="race" id="human" />
-                        <label htmlFor="human">人型</label>
+                        <label className={'humans'} htmlFor="human">人型</label>
                     </div>
                     <div className={'selectArea__btn'}>
                         <input type="radio" name="race" id="animal" />
-                        <label htmlFor="animal">その他</label>
+                        <label className={'animals'}  htmlFor="animal">その他</label>
                     </div>
                 </div>
             </div>

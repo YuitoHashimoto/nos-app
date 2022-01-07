@@ -1,5 +1,12 @@
 import './scss/index.scss';
-import{ Urls, LoadView, Title, NewName, CharaSelect } from './components/index';
+import{
+  // テスト用
+   Urls,
+  //  キャラカスタム
+   LoadView,Title, NewName, CharaSelect, CharaComp,
+  // 各種ページ
+   Home, RoomCustom, Mypage
+} from './components/index';
 import {Routes, Route } from 'react-router-dom';
 // import firebase from './firebase';
 
@@ -12,6 +19,10 @@ function App() {
         <Route path='/title' element={<Title />} />
         <Route path='/name' element={<NewName />} />
         <Route path='/charaselect' element={<CharaSelect />} />
+        <Route path='/characomp' element={<CharaComp />} />
+        <Route path='/home' element={<Home />} />
+        <Route path='/roomcustom' element={<RoomCustom />} />
+        <Route path='/mypage' element={<Mypage />} />
       </Routes>
     </>
   );
