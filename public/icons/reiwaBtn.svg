@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="289.95" height="87.676" viewBox="0 0 289.95 87.676">
+  <defs>
+    <radialGradient id="radial-gradient" cx="-0.191" cy="-0.045" r="2.24" gradientTransform="translate(-1.694) scale(4.387 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ef5467"/>
+      <stop offset="1" stop-color="#ec1c25"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.479" cy="0.103" r="3.351" gradientTransform="translate(-0.005) scale(1.01 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f7798d"/>
+      <stop offset="1" stop-color="#c10914"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-3" cx="0.233" cy="-8.818" r="16.96" gradientTransform="translate(0.477) scale(0.046 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#efb4ca"/>
+      <stop offset="1" stop-color="#ef3243"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-4" cx="0.68" cy="-2.764" r="8.222" gradientTransform="translate(-0.005) scale(1.01 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ef6476"/>
+      <stop offset="1" stop-color="#c10914"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-5" cx="0.755" cy="-0.655" r="2.241" gradientTransform="translate(-1.693) scale(4.386 1)" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-6" cx="-0.576" cy="-0.837" r="1.981" gradientTransform="translate(-0.005) scale(1.01 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ef1c2d"/>
+      <stop offset="1" stop-color="#ce0925"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-7" cx="0.218" cy="-10.271" r="19.121" gradientTransform="translate(0.477) scale(0.046 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f71e2f"/>
+      <stop offset="1" stop-color="#b70b20"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-8" cx="-0.534" cy="-0.398" r="3.082" gradientTransform="translate(-0.005) scale(1.01 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ef5f70"/>
+      <stop offset="1" stop-color="#d60a14"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-9" cx="0.5" cy="0.5" r="17.577" gradientTransform="translate(0.477) scale(0.046 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ef6476"/>
+      <stop offset="1" stop-color="#01000a"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-10" cx="1.186" cy="1.315" r="1.688" gradientTransform="translate(-0.005) scale(1.01 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f73d4e"/>
+      <stop offset="1" stop-color="#dcdcff"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-11" cx="0.817" cy="1.137" r="2.479" gradientTransform="translate(-0.005) scale(1.01 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d1223b"/>
+      <stop offset="1" stop-color="#dcdcff"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-12" cx="0.648" cy="0.197" r="1.835" gradientTransform="translate(-0.005) scale(1.01 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c240e5"/>
+      <stop offset="1" stop-color="#dcdcff"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-13" cx="0.5" cy="0.5" r="87.604" gradientTransform="translate(0.495) scale(0.01 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f72b3d"/>
+      <stop offset="1" stop-color="#01000a"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="0.021" y1="0.085" x2="0.974" y2="0.91" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f7315d"/>
+      <stop offset="1" stop-color="#d80e51"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient-14" cx="1.036" cy="1.025" r="8.553" gradientTransform="translate(0.38) scale(0.24 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f76f82"/>
+      <stop offset="1" stop-color="#01000a"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-15" cx="0.031" cy="0.981" r="10.145" xlink:href="#radial-gradient-14"/>
+    <radialGradient id="radial-gradient-16" cx="0.049" cy="0.893" r="5.346" xlink:href="#radial-gradient-14"/>
+    <radialGradient id="radial-gradient-17" cx="0.92" cy="1.287" r="5.241" xlink:href="#radial-gradient-14"/>
+    <radialGradient id="radial-gradient-18" cx="0.001" cy="0.001" r="2.124" gradientTransform="translate(0.35) scale(0.301 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f75264"/>
+      <stop offset="1" stop-color="#01000a"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-19" cx="0.448" cy="-1.57" r="7.077" gradientTransform="translate(0.432) scale(0.136 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f77a8d"/>
+      <stop offset="1" stop-color="#01000a"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-20" cx="1.01" cy="0.488" r="2.977" xlink:href="#radial-gradient-18"/>
+    <radialGradient id="radial-gradient-21" cx="0.419" cy="3.66" r="5.244" gradientTransform="translate(0.432) scale(0.136 1)" xlink:href="#radial-gradient-18"/>
+    <radialGradient id="radial-gradient-22" cx="0.007" cy="-0.069" r="6.359" gradientTransform="translate(0.349) scale(0.302 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ef5d6d"/>
+      <stop offset="1" stop-color="#01000a"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-23" cx="0.008" cy="-0.04" r="5.167" gradientTransform="translate(0.434) scale(0.132 1)" xlink:href="#radial-gradient-22"/>
+    <radialGradient id="radial-gradient-24" cx="0.985" cy="-0.026" r="2.704" gradientTransform="translate(0.349) scale(0.302 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ef8a9d"/>
+      <stop offset="1" stop-color="#01000a"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-25" cx="1.029" cy="1.145" r="7.592" gradientTransform="translate(0.434) scale(0.132 1)" xlink:href="#radial-gradient-22"/>
+    <radialGradient id="radial-gradient-26" cx="0.274" cy="-0.374" r="1.745" gradientTransform="translate(0.092) scale(0.817 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ef7182"/>
+      <stop offset="1" stop-color="#01000a"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-27" cx="0.614" cy="-0.592" r="2.019" gradientTransform="translate(0.104) scale(0.791 1)" xlink:href="#radial-gradient-26"/>
+    <radialGradient id="radial-gradient-28" cx="0.231" cy="-1.103" r="2.614" gradientTransform="translate(0.155) scale(0.69 1)" xlink:href="#radial-gradient-26"/>
+  </defs>
+  <g id="グループ_883" data-name="グループ 883" transform="translate(-65.268 -374.162)">
+    <g id="アートワーク_1" data-name="アートワーク 1" transform="translate(210.243 418)">
+      <g id="グループ_644" data-name="グループ 644" transform="translate(-144.975 -43.838)">
+        <path id="パス_3492" data-name="パス 3492" d="M289.2,19.652c.447,4.884.746,13.885.746,24.185s-.3,19.3-.746,24.185a91.138,91.138,0,0,1-8.718,9.77,90.549,90.549,0,0,1-9.77,8.715c-25.389.7-72.192,1.167-125.741,1.167S44.623,87.208,19.234,86.509a90.771,90.771,0,0,1-9.773-8.715,91.345,91.345,0,0,1-8.715-9.77C.3,63.139,0,54.136,0,43.838s.3-19.3.746-24.185a91.09,91.09,0,0,1,8.715-9.77,90.859,90.859,0,0,1,9.773-8.718C44.623.468,91.426,0,144.975,0S245.327.468,270.716,1.164a90.636,90.636,0,0,1,9.77,8.718,90.884,90.884,0,0,1,8.718,9.77Z" fill="#770e1d" fill-rule="evenodd"/>
+        <path id="パス_3493" data-name="パス 3493" d="M10.563,31.746c0-6.581.01-13.55.463-20.211L.746,7.561C.3,12.445,0,21.446,0,31.746s.3,19.3.746,24.185l10.28-3.977c-.452-6.662-.463-13.628-.463-20.209Z" transform="translate(0 12.091)" fill-rule="evenodd" fill="url(#radial-gradient)"/>
+        <path id="パス_3494" data-name="パス 3494" d="M10.567,22.91c1.843-2.2,4.05-4.419,5.908-6.274,1.793-1.793,3.927-3.917,6.051-5.718L18.775.448A90.859,90.859,0,0,0,9,9.166a91.09,91.09,0,0,0-8.715,9.77l10.28,3.974Z" transform="translate(0.459 0.716)" fill-rule="evenodd" fill="url(#radial-gradient-2)"/>
+        <path id="パス_3495" data-name="パス 3495" d="M11.151,11.634c16.211-.411,32.446-.6,48.659-.749q36.664-.347,73.331-.32,36.664,0,73.331.32c16.214.153,32.448.338,48.659.749l3.751-10.47C233.493.468,186.689,0,133.141,0S32.789.468,7.4,1.164l3.751,10.47Z" transform="translate(11.834)" fill-rule="evenodd" fill="url(#radial-gradient-3)"/>
+        <path id="パス_3496" data-name="パス 3496" d="M102.711,10.918c2.124,1.8,4.257,3.925,6.051,5.718,1.858,1.856,4.068,4.078,5.905,6.274l10.282-3.974a90.884,90.884,0,0,0-8.718-9.77,90.637,90.637,0,0,0-9.77-8.718l-3.751,10.47Z" transform="translate(164.254 0.716)" fill-rule="evenodd" fill="url(#radial-gradient-4)"/>
+        <path id="パス_3497" data-name="パス 3497" d="M107.311,11.535c.455,6.662.463,13.63.463,20.211s-.008,13.547-.463,20.209l10.282,3.977c.447-4.884.746-13.887.746-24.185s-.3-19.3-.746-24.185l-10.282,3.974Z" transform="translate(171.61 12.091)" fill-rule="evenodd" fill="url(#radial-gradient-5)"/>
+        <path id="パス_3498" data-name="パス 3498" d="M114.667,24.641c-1.838,2.2-4.047,4.421-5.905,6.277-1.793,1.793-3.927,3.917-6.051,5.718L106.462,47.1a90.549,90.549,0,0,0,9.77-8.715,91.138,91.138,0,0,0,8.718-9.77l-10.282-3.977Z" transform="translate(164.254 39.406)" fill-rule="evenodd" fill="url(#radial-gradient-6)"/>
+        <path id="パス_3499" data-name="パス 3499" d="M255.131,29.256c-16.211.411-32.446.6-48.659.749q-36.664.347-73.331.32-36.664,0-73.331-.32c-16.214-.153-32.448-.338-48.659-.749L7.4,39.723c25.389.7,72.192,1.167,125.741,1.167s100.352-.468,125.741-1.167l-3.751-10.467Z" transform="translate(11.834 46.786)" fill-rule="evenodd" fill="url(#radial-gradient-7)"/>
+        <path id="パス_3500" data-name="パス 3500" d="M22.526,36.636c-2.124-1.8-4.257-3.925-6.051-5.718-1.858-1.856-4.065-4.078-5.908-6.277L.287,28.618A91.345,91.345,0,0,0,9,38.388,90.771,90.771,0,0,0,18.775,47.1l3.751-10.467Z" transform="translate(0.459 39.406)" fill-rule="evenodd" fill="url(#radial-gradient-8)"/>
+        <path id="パス_3501" data-name="パス 3501" d="M133.141,37.306c-67.374,0-121.99-3.605-121.99-8.05L7.4,39.723c25.389.7,72.192,1.167,125.741,1.167s100.352-.468,125.741-1.167l-3.751-10.467c0,4.445-54.617,8.05-121.99,8.05Z" transform="translate(11.834 46.786)" fill-rule="evenodd" opacity="0.5" fill="url(#radial-gradient-9)" style="mix-blend-mode: screen;isolation: isolate"/>
+        <path id="パス_3502" data-name="パス 3502" d="M18.775.448C22.076,12.9,9.239,21.909.287,18.936l10.28,3.974c1.843-2.2,4.05-4.419,5.908-6.274,1.793-1.793,3.927-3.917,6.051-5.718L18.775.448Z" transform="translate(0.459 0.716)" fill-rule="evenodd" fill="url(#radial-gradient-10)" style="mix-blend-mode: multiply;isolation: isolate"/>
+        <path id="パス_3503" data-name="パス 3503" d="M21.83,10.4c16.211-.411,32.446-.6,48.659-.749q36.664-.347,73.331-.32,36.664,0,73.331.32L221.6,9.7C155.974,8.461,89.084,8.058,22.774,9.2l-.749-.473C20.762,5.976,19.641,3.525,18.378.77c.746,2.927.834,5.032,1.58,7.959l-.205.92c-1.422,3.161-5.718,7.894-10.428,10.75l-.894.2c-2.789-.855-4.92-.889-7.709-1.744,2.62,1.206,5.068,2.412,7.688,3.618l.473.749C8.689,36.28,8.668,49.156,8.9,61.789l-.457.78c-1.632.876-3.093,1.752-4.725,2.63,1.8-.46,3.524-.824,5.328-1.284l.886.244c3.535,3.535,7.351,7.239,10.813,10.774l.239.892c-.353,1.409-.58,2.539-.946,4,.676-1.336,1.393-2.448,2.069-3.784l.767-.46c28.238.6,64.725.626,92.916.26-12.416-.052-32.88-.161-45.3-.278-16.214-.153-32.448-.338-48.659-.749-2.124-1.8-4.257-3.925-6.051-5.718-1.858-1.856-4.065-4.078-5.908-6.277-.452-6.662-.463-13.628-.463-20.209s.01-13.55.463-20.211c1.843-2.2,4.05-4.419,5.908-6.274,1.793-1.793,3.927-3.917,6.051-5.718Z" transform="translate(1.155 1.231)" fill="#b49dff" fill-rule="evenodd" style="mix-blend-mode: screen;isolation: isolate"/>
+        <path id="パス_3504" data-name="パス 3504" d="M106.462.448C103.161,12.9,116,21.909,124.95,18.936L114.667,22.91c-1.838-2.2-4.047-4.419-5.905-6.274-1.793-1.793-3.927-3.917-6.051-5.718L106.462.448Z" transform="translate(164.254 0.716)" fill-rule="evenodd" fill="url(#radial-gradient-11)" style="mix-blend-mode: multiply;isolation: isolate"/>
+        <path id="パス_3505" data-name="パス 3505" d="M106.462,47.1C103.161,34.65,116,25.642,124.95,28.618l-10.282-3.977c-1.838,2.2-4.047,4.421-5.905,6.277-1.793,1.793-3.927,3.917-6.051,5.718L106.462,47.1Z" transform="translate(164.254 39.406)" fill-rule="evenodd" fill="url(#radial-gradient-12)" style="mix-blend-mode: multiply;isolation: isolate"/>
+        <path id="パス_3506" data-name="パス 3506" d="M162.582,55.832c-1.838,2.2-4.047,4.421-5.905,6.277-1.793,1.793-3.927,3.917-6.051,5.718-16.211.411-32.446.6-48.659.749q-14.609.136-29.217.211,38.473.16,77.011-.114l.738.481q1.805,4.2,3.613,8.4-1.306-4.316-2.61-8.629l.205-.894q5.217-5.665,10.724-11.039l.886-.221q3.435,1,6.872,2.007l-6.4-2.966-.463-.751q.655-19.365.013-38.733l.457-.759q3.045-1.489,6.085-2.976c-2.23.691-4.3,1.331-6.511,2.014l-.866-.226c-3.085-3.246-6.55-6.259-9.947-9.24,1.458,1.346,2.87,2.753,4.115,4,1.858,1.856,4.068,4.078,5.905,6.274.455,6.662.463,13.63.463,20.211s-.008,13.547-.463,20.209Z" transform="translate(116.339 8.215)" fill="#ff65c4" fill-rule="evenodd" style="mix-blend-mode: screen;isolation: isolate"/>
+        <path id="パス_3507" data-name="パス 3507" d="M7.4,1.177c.559.777,56.639,1.406,125.738,1.406S258.32,1.955,258.879,1.177l0-.013C233.493.468,186.689,0,133.141,0S32.789.468,7.4,1.164l0,.013Z" transform="translate(11.834)" fill-rule="evenodd" fill="url(#radial-gradient-13)" style="mix-blend-mode: screen;isolation: isolate"/>
+        <path id="パス_3508" data-name="パス 3508" d="M4.527,57.546c1.843,2.2,4.05,4.421,5.905,6.277,1.8,1.793,3.93,3.917,6.054,5.718,16.211.411,32.446.6,48.659.749q36.664.347,73.331.32,36.664,0,73.331-.32c16.214-.153,32.446-.338,48.659-.749,2.124-1.8,4.257-3.925,6.051-5.718,1.858-1.856,4.068-4.078,5.905-6.277.455-6.662.463-13.628.463-20.209s-.008-13.55-.463-20.211c-1.838-2.2-4.047-4.419-5.905-6.274-1.793-1.793-3.927-3.917-6.051-5.718-16.214-.411-32.446-.6-48.659-.749q-36.664-.347-73.331-.32-36.664,0-73.331.32c-16.214.153-32.448.338-48.659.749-2.124,1.8-4.26,3.925-6.051,5.718-1.858,1.856-4.065,4.078-5.908,6.274-.452,6.662-.463,13.63-.463,20.211s.01,13.547.463,20.209Z" transform="translate(6.499 6.501)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+        <g id="グループ_643" data-name="グループ 643" transform="translate(10.563 10.566)" opacity="0.5">
+          <path id="パス_3509" data-name="パス 3509" d="M4.242,16.469,138.191,36.68,16.2,4.476c-2.124,1.8-4.26,3.925-6.051,5.718-1.858,1.856-4.065,4.078-5.908,6.274Z" transform="translate(-3.779 -3.408)" fill-rule="evenodd" opacity="0.5" fill="url(#radial-gradient-14)" style="mix-blend-mode: screen;isolation: isolate"/>
+          <path id="パス_3510" data-name="パス 3510" d="M189.724,16.469,55.777,36.68l121.99-32.2c2.124,1.8,4.257,3.925,6.051,5.718,1.858,1.856,4.068,4.078,5.905,6.274Z" transform="translate(78.635 -3.408)" fill-rule="evenodd" opacity="0.5" fill="url(#radial-gradient-15)" style="mix-blend-mode: screen;isolation: isolate"/>
+          <path id="パス_3511" data-name="パス 3511" d="M4.242,37.075,138.191,16.866,16.2,49.07c-2.124-1.8-4.257-3.925-6.051-5.718C8.292,41.5,6.085,39.274,4.242,37.075Z" transform="translate(-3.779 16.406)" fill-rule="evenodd" opacity="0.75" fill="url(#radial-gradient-16)" style="mix-blend-mode: screen;isolation: isolate"/>
+          <path id="パス_3512" data-name="パス 3512" d="M189.724,37.075,55.777,16.866l121.99,32.2c2.124-1.8,4.257-3.925,6.051-5.718,1.858-1.856,4.068-4.078,5.905-6.277Z" transform="translate(78.635 16.406)" fill-rule="evenodd" fill="url(#radial-gradient-17)" style="mix-blend-mode: screen;isolation: isolate"/>
+          <path id="パス_3513" data-name="パス 3513" d="M4.527,49.51,138.476,29.3,4.527,9.09c-.452,6.662-.463,13.63-.463,20.211s.01,13.547.463,20.209Z" transform="translate(-4.064 3.971)" fill-rule="evenodd" opacity="0.3" fill="url(#radial-gradient-18)" style="mix-blend-mode: screen;isolation: isolate"/>
+          <path id="パス_3514" data-name="パス 3514" d="M8.843,5.133l121.99,32.2,121.99-32.2c-16.214-.411-32.446-.6-48.659-.749q-36.664-.347-73.331-.32-36.664,0-73.331.32c-16.214.153-32.448.338-48.659.749Z" transform="translate(3.579 -4.065)" fill-rule="evenodd" opacity="0.75" fill="url(#radial-gradient-19)" style="mix-blend-mode: screen;isolation: isolate"/>
+          <path id="パス_3515" data-name="パス 3515" d="M189.724,9.09,55.777,29.3,189.724,49.51c.455-6.662.463-13.628.463-20.209s-.008-13.55-.463-20.211Z" transform="translate(78.635 3.971)" fill-rule="evenodd" opacity="0.5" fill="url(#radial-gradient-20)" style="mix-blend-mode: screen;isolation: isolate"/>
+          <path id="パス_3516" data-name="パス 3516" d="M252.824,49.07l-121.99-32.2L8.843,49.07c16.211.411,32.446.6,48.659.749q36.664.347,73.331.32,36.664,0,73.331-.32c16.214-.153,32.446-.338,48.659-.749Z" transform="translate(3.579 16.406)" fill-rule="evenodd" opacity="0.8" fill="url(#radial-gradient-21)" style="mix-blend-mode: screen;isolation: isolate"/>
+          <path id="パス_3517" data-name="パス 3517" d="M13.694,43.524l109.383-16.5L13.694,10.516V43.524Z" transform="translate(11.335 6.252)" fill-rule="evenodd" opacity="0.5" fill="url(#radial-gradient-22)" style="mix-blend-mode: screen;isolation: isolate"/>
+          <path id="パス_3518" data-name="パス 3518" d="M31.724,10.516l62.518,16.5,62.519-16.5Z" transform="translate(40.17 6.252)" fill-rule="evenodd" fill="url(#radial-gradient-23)" style="mix-blend-mode: screen;isolation: isolate"/>
+          <path id="パス_3519" data-name="パス 3519" d="M165.161,10.516,55.777,27.02l109.384,16.5V10.516Z" transform="translate(78.635 6.252)" fill-rule="evenodd" opacity="0.5" fill="url(#radial-gradient-24)" style="mix-blend-mode: screen;isolation: isolate"/>
+          <path id="パス_3520" data-name="パス 3520" d="M156.761,33.37l-62.519-16.5L31.724,33.37Z" transform="translate(40.17 16.406)" fill-rule="evenodd" opacity="0.7" fill="url(#radial-gradient-25)" style="mix-blend-mode: screen;isolation: isolate"/>
+        </g>
+        <path id="パス_3521" data-name="パス 3521" d="M18.73,69.493,84.094,4.129q-9.478.062-18.956.153-11.747.109-23.5.265L4.068,42.119c.021,5.084.112,10.293.452,15.325,1.843,2.2,4.05,4.421,5.908,6.277,1.793,1.793,3.927,3.917,6.051,5.718l2.251.055Z" transform="translate(6.505 6.603)" fill-rule="evenodd" opacity="0.65" fill="url(#radial-gradient-26)" style="mix-blend-mode: screen;isolation: isolate"/>
+        <path id="パス_3522" data-name="パス 3522" d="M89.08,4.083,23,70.168q5.938.066,11.873.122,2.811.027,5.619.049L106.765,4.065q-8.842,0-17.685.018Z" transform="translate(36.775 6.501)" fill-rule="evenodd" opacity="0.65" fill="url(#radial-gradient-27)" style="mix-blend-mode: screen;isolation: isolate"/>
+        <path id="パス_3523" data-name="パス 3523" d="M134.489,4.3,68.626,70.169q18.363-.07,36.732-.231l58.69-58.69c-.265-.265-.522-.525-.777-.777-1.793-1.793-3.927-3.917-6.051-5.718q-11.361-.289-22.73-.45Z" transform="translate(109.746 6.881)" fill-rule="evenodd" opacity="0.65" fill="url(#radial-gradient-28)" style="mix-blend-mode: screen;isolation: isolate"/>
+      </g>
+    </g>
+    <text id="令和" transform="translate(210 439)" fill="#fff" font-size="48" font-family="MochiyPopPOne-Regular, Mochiy Pop P One" letter-spacing="0.06em"><tspan x="-49.44" y="0">令和</tspan></text>
+  </g>
+</svg>

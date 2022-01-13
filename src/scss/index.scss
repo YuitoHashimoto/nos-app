@@ -356,6 +356,14 @@ main {
     &__content {
         height: calc(100% - 16.5rem);
         overflow-y: scroll;
+        .changeSelect {
+            width: 7.9rem;
+            height: 2.9rem;
+            margin: 1.6rem auto 0 auto;
+            .changeSelectSvg {
+                cursor: pointer;
+            }
+        }
         &__stats {
             position: relative;
             width: 36.6rem;
@@ -415,8 +423,275 @@ main {
                 }
             }
         }
+        &__changeName {
+            width: 25.0rem;
+            margin: 2.8rem auto 0 auto;
+            .penIcon {
+                margin: 0 0 0 0.8rem;
+            }
+            label {
+                display: flex;
+                align-items: center;
+                font-size: 1.6rem;
+            }
+            input {
+                width: 100%;
+                height: 3.0rem;
+                background: #fff;
+                border-radius: 1.0rem;
+                text-align: center;
+                font-size: 1.4rem;
+                margin: 2.4rem 0 0 0;
+            }
+        }
+        &__changeIcon {
+            width: 25.0rem;
+            margin: 2.8rem auto 0 auto;
+            .penIcon {
+                margin: 0 0 0 0.8rem;
+            }
+            label {
+                display: flex;
+                align-items: center;
+                font-size: 1.6rem;
+            }
+            .changeIconView {
+                width: 7.0rem;
+                height: 7.0rem;
+                border-radius: 1.0rem;
+                margin: 2.4rem auto 0 auto;
+                background-image: url('../img/iconChange.svg');
+                background-color: #fff;
+            }
+        }
+        &__changeTitle {
+            width: 25.0rem;
+            margin: 2.8rem auto 0 auto;
+            .penIcon {
+                margin: 0 0 0 0.8rem;
+            }
+            label {
+                display: flex;
+                align-items: center;
+                font-size: 1.6rem;
+            }
+            input {
+                width: 100%;
+                height: 3.0rem;
+                background: #fff;
+                border-radius: 1.0rem;
+                text-align: center;
+                font-size: 1.4rem;
+                margin: 2.4rem 0 0 0;
+            }
+        }
+        &__changeChara {
+            width: 25.0rem;
+            margin: 2.8rem auto 0 auto;
+            .penIcon {
+                margin: 0 0 0 0.8rem;
+            }
+            label {
+                display: flex;
+                align-items: center;
+                font-size: 1.6rem;
+            }
+            .changeCharaView {
+                width: 17.4rem;
+                height: 22.2rem;
+                background: url('../img/charaChange.svg');
+                margin: 1.6rem auto 0 auto;
+            }
+        }
+        &__changeProfile {
+            width: 25.0rem;
+            margin: 2.8rem auto 0 auto;
+            .penIcon {
+                margin: 0 0 0 0.8rem;
+            }
+            label {
+                display: flex;
+                align-items: center;
+                font-size: 1.6rem;
+            }
+            textarea {
+                width: 100%;
+                height: 15.0rem;
+                background: #fff;
+                border-radius: 1.0rem;
+                text-align: center;
+                font-size: 1.4rem;
+                padding: 1.5rem 2.5rem 0 2.5rem;
+                margin: 2.4rem 0 0 0;
+            }
+        }
     }
     .homeFoot {
         background: none;
     }
+}
+
+// battleHome
+.battleHome {
+    background: url('../img/battleBack.svg');
+    &__content {
+        padding: 17.2rem 0 0 0;
+        .battleTxt {
+            width: 12.4rem;
+            margin: 0 auto;
+        }
+        .battleBtns {
+            width: 32.8rem;
+            height: 13.4rem;
+        }
+        .soloBattleBtn {
+            margin: 3.6rem auto 0 auto;
+        }
+        .multiBattleBtn {
+            margin: 4.8rem auto 0 auto;
+        }
+        .missionBtn {
+            margin: 4.8rem auto 0 auto;
+        }
+    }
+}
+
+// genSelect
+.genSelect {
+    background: url('../img/battleBack.svg');
+    &__content {
+        padding: 17.7rem 0 0 0;
+        &__titleArea {
+            width: 29.0rem;
+            margin: 0 auto 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .soloTitleTxt {
+                margin: 5.4rem 0 0 0;
+            }
+        }
+        &__btnArea {
+            width: 29.0rem;
+            margin: 6.4rem auto 0 auto;
+            .heiwaBtn {
+                margin: 2.9rem 0 0 0;
+            }
+            .syouwaBtn {
+                margin: 2.9rem 0 0 0;
+            }
+        }
+    }
+}
+
+// rareSelect
+.rareSelect {
+    background: url('../img/battleBack.svg');
+    padding: 16.6rem 0 0 0;
+    &__content {
+        &__titleArea {
+            display: flex;
+            justify-content: center;
+        }
+        &__btnArea {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 4.9rem 0 0 0;
+            .rareBtnMargin {
+                margin: 2.8rem 0 0 0;
+            }
+        }
+    }
+}
+
+// itemSelect
+.itemSelect {
+    background: url('../img/battleBack.svg');
+    &__content {
+        padding: 8.2rem 0 0 0;
+        &__titleArea {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 0 2.9rem 0;
+            .itemSelTxt {
+                margin: 4.8rem 0 0 0;
+            }
+        }
+        &__selectArea {
+            position: relative;
+            width: 36.4rem;
+            height: 52.8rem;
+            border-radius: 1.2rem;
+            margin: 0 auto;
+            .selectBtn {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 1.4rem;
+                margin: 0  auto;
+                z-index: 100;
+            }
+            .backOverlay {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: #8EAEC1;
+                mix-blend-mode: multiply;
+                border-radius: 1.2rem;
+            }    
+            .selectBox {
+                position: relative;
+                width: 33.2rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 0 auto 0 auto;
+                padding: 2.6rem 0 0 0;
+                &__content {
+                    width: 10.0rem;
+                    height: 11.2rem;
+                    margin: 0 0 1.3rem 0;
+                    &__img {
+                        width: 10.0rem;
+                        height: 8.0rem;
+                        background-color: #fff;
+                        border-radius: 1.0rem;
+                        background-image: url('../img/itemDemo.svg');
+                        background-position: center;
+                        margin: 0 0 0.8rem 0;
+                    }
+                    &__txt {
+                        display: flex;
+                        align-items: center;
+                        padding: 0 1.0rem;
+                        &__rareTxt {
+                            display: flex;
+                            align-items: center;
+                            p {
+                                color: #fff;
+                                font-size: 1.6rem;
+                            }
+                        }
+                        &__itemTxt {
+                            color: #fff;
+                            font-size: 1.2rem;
+                            margin: 0 0 0 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// matchingView
+.matchingView {
+    @include stripeBack();
 }

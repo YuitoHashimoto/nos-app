@@ -16,3 +16,10 @@ export {default as HomeFoot} from './HomeFoot'
 // 各種ページ
 export {default as RoomCustom} from './RoomCustom'
 export {default as Mypage} from './Mypage'
+
+// クイズバトル
+export {default as BattleHome} from './BattleHome'
+export {default as GenerationSelect} from './GenerationSelect'
+export {default as RareSelect} from './RareSelect'
+export {default as ItemSelect} from './ItemSelect'
+export {default as MatchingView} from './MatchingView'

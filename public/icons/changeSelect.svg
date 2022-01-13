@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79" height="31" viewBox="0 0 79 31">
+  <defs>
+    <filter id="長方形_3" x="0" y="0" width="79" height="31" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#5dabd9"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="長方形_3-2" x="0" y="0" width="79" height="31" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_855" data-name="グループ 855" transform="translate(-168 -586)">
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 168, 586)" filter="url(#長方形_3)">
+        <rect id="長方形_3-3" data-name="長方形 3" width="79" height="29" rx="14.5" fill="#69c6ff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 168, 586)" filter="url(#長方形_3-2)">
+        <rect id="長方形_3-4" data-name="長方形 3" width="79" height="29" rx="14.5" fill="#fff"/>
+      </g>
+    </g>
+    <text id="選ぶ" transform="translate(207 607)" fill="#fff" font-size="14" font-family="MochiyPopPOne-Regular, Mochiy Pop P One"><tspan x="-14.084" y="0">選ぶ</tspan></text>
+    <ellipse id="楕円形_52" data-name="楕円形 52" cx="3.376" cy="2.857" rx="3.376" ry="2.857" transform="translate(236.476 590.219) rotate(31)" fill="#fff" opacity="0.401"/>
+  </g>
+</svg>

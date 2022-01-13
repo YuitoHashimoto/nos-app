@@ -10,6 +10,12 @@ const Urls = () => {
             <Link to="/characomp">CharaComp</Link>
             <Link to="/home">Home</Link>
             <Link to="/roomcustom">RoomCustom</Link>
+            <Link to="/mypage">Mypage</Link>
+            <Link to="/battlehome">BattleHome</Link>
+            <Link to="/genselect">GenerationSelect</Link>
+            <Link to="/rareselect">RareSelect</Link>
+            <Link to="/itemselect">ItemSelect</Link>
+            <Link to="/matching">MatchingView</Link>
         </div>
     )
 }

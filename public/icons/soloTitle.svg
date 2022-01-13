@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="224" height="48" viewBox="0 0 224 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f54466"/>
+      <stop offset="1" stop-color="#fdd0d9"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="長方形_334" data-name="長方形 334" width="224" height="48" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="長方形_332" data-name="長方形 332" width="224" height="48" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <path id="パス_254" data-name="パス 254" d="M16,0H208a16,16,0,0,1,16,16V32a16,16,0,0,1-16,16H16A16,16,0,0,1,0,32V16A16,16,0,0,1,16,0" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_884" data-name="グループ 884" transform="translate(-95 -177)">
+    <g id="グループ_311" data-name="グループ 311" transform="translate(95 177)">
+      <g id="グループ_310" data-name="グループ 310" clip-path="url(#clip-path)">
+        <g id="グループ_309" data-name="グループ 309">
+          <g id="グループ_308" data-name="グループ 308" clip-path="url(#clip-path)">
+            <path id="パス_253" data-name="パス 253" d="M16,0H208a16,16,0,0,1,16,16V32a16,16,0,0,1-16,16H16A16,16,0,0,1,0,32V16A16,16,0,0,1,16,0" fill="#f54466"/>
+            <g id="グループ_302" data-name="グループ 302" opacity="0.2">
+              <g id="グループ_301" data-name="グループ 301">
+                <g id="グループ_300" data-name="グループ 300" clip-path="url(#clip-path)">
+                  <image id="長方形_329" data-name="長方形 329" width="224" height="48" xlink:href="data:image/png;base64,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"/>
+                </g>
+              </g>
+            </g>
+            <g id="グループ_307" data-name="グループ 307" opacity="0.6">
+              <g id="グループ_306" data-name="グループ 306">
+                <g id="グループ_305" data-name="グループ 305" clip-path="url(#clip-path-4)">
+                  <g id="グループ_304" data-name="グループ 304">
+                    <g id="グループ_303" data-name="グループ 303" clip-path="url(#clip-path-5)">
+                      <rect id="長方形_331" data-name="長方形 331" width="224" height="48" fill="url(#linear-gradient)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <text id="ひとりで戦う" transform="translate(210 212)" fill="#fff" font-size="24" font-family="MochiyPopPOne-Regular, Mochiy Pop P One" letter-spacing="0.08em"><tspan x="-70.032" y="0">ひとりで戦う</tspan></text>
+  </g>
+</svg>
