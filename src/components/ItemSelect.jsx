@@ -1,6 +1,17 @@
 import { ItemSelTitle, ItemSelTxt, StarIcon, SelectBtn } from './icons/index'
+import { useNavigate } from 'react-router-dom';
+
 
 const ItemSelect = () => {
+    const navigate = useNavigate();
+
+    const nextPage = () => {
+        navigate({
+            pathname: '/matching'
+        })
+    }
+
+
     return ( 
         <main className="itemSelect">
             <div className="itemSelect__content">
@@ -52,7 +63,7 @@ const ItemSelect = () => {
                             </div>
                         </div>
                     </div>
-                    <SelectBtn className='selectBtn' />
+                    <SelectBtn className='selectBtn' onClick={nextPage} />
                 </div>
             </div>
         </main>

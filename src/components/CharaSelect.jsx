@@ -1,6 +1,17 @@
 import { SelectBtn } from './icons/index'
+import { useNavigate } from 'react-router-dom';
+
 
 const CharaSelect = () => {
+    const navigate = useNavigate();
+
+    const nextPage = () => {
+        navigate({
+            pathname: '/characomp'
+        })
+    }
+
+
     return (
         <main className={'charaSelect'}>
             <div className={'charaSelect__box'}>
@@ -17,7 +28,7 @@ const CharaSelect = () => {
                 </div>
             </div>
             <div className={'btnArea'}>
-                <SelectBtn />
+                <SelectBtn onClick={nextPage} />
             </div>
         </main>
     )

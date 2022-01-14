@@ -16,6 +16,8 @@ const Urls = () => {
             <Link to="/rareselect">RareSelect</Link>
             <Link to="/itemselect">ItemSelect</Link>
             <Link to="/matching">MatchingView</Link>
+            <Link to="/quizstart">QuizStart</Link>
+            <Link to="/twochoice">TwoChoiceTitle</Link>
         </div>
     )
 }

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="152" height="59" viewBox="0 0 152 59">
+  <defs>
+    <filter id="長方形_80" x="0" y="0" width="152" height="59" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#d8284a"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="長方形_80-2" x="0" y="0" width="152" height="59" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_921" data-name="グループ 921" transform="translate(-131 -557)">
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 131, 557)" filter="url(#長方形_80)">
+        <rect id="長方形_80-3" data-name="長方形 80" width="152" height="56" rx="28" fill="#ff506f"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 131, 557)" filter="url(#長方形_80-2)">
+        <rect id="長方形_80-4" data-name="長方形 80" width="152" height="56" rx="28" fill="#fff"/>
+      </g>
+    </g>
+    <ellipse id="楕円形_53" data-name="楕円形 53" cx="6.5" cy="5.5" rx="6.5" ry="5.5" transform="translate(264.761 562.438) rotate(31)" fill="#fff" opacity="0.401"/>
+    <text id="答える" transform="translate(207 595)" fill="#fff" font-size="24" font-family="MochiyPopPOne-Regular, Mochiy Pop P One"><tspan x="-33.552" y="0">答える</tspan></text>
+  </g>
+</svg>

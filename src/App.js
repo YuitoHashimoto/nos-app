@@ -7,7 +7,9 @@ import{
   // 各種ページ
   Home, RoomCustom, Mypage, BattleHome,
   //  クイズバトル
-  GenerationSelect, RareSelect, ItemSelect, MatchingView
+  GenerationSelect, RareSelect, ItemSelect, MatchingView, QuizStart,
+  // クイズタイプ
+  TwoChoice
 } from './components/index';
 import {Routes, Route } from 'react-router-dom';
 // import firebase from './firebase';
@@ -30,6 +32,8 @@ function App() {
         <Route path='/rareselect' element={<RareSelect />} />
         <Route path='/itemselect' element={<ItemSelect />} />
         <Route path='/matching' element={<MatchingView />} />
+        <Route path='/quizstart' element={<QuizStart />} />
+        <Route path='/twochoice' element={<TwoChoice />} />
       </Routes>
     </>
   );

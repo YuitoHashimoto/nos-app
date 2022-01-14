@@ -1,7 +1,15 @@
 import { SoloTitle, SoloTitleTxt, ReiwaBtn, HeiwaBtn, SyouwaBtn  } from './icons/index'
-
+import { useNavigate } from 'react-router-dom';
 
 const GenerationSelect = () => {
+    const navigate = useNavigate();
+
+    const nextPage = () => {
+        navigate({
+            pathname: '/rareselect'
+        })
+    }
+
     return (
         <main className="genSelect">
             <div className='genSelect__content'>
@@ -10,9 +18,9 @@ const GenerationSelect = () => {
                     <SoloTitleTxt className='soloTitleTxt' />
                 </div>
                 <div className='genSelect__content__btnArea'>
-                    <ReiwaBtn />
-                    <HeiwaBtn className='heiwaBtn' />
-                    <SyouwaBtn className='syouwaBtn' />
+                    <ReiwaBtn onClick={nextPage} />
+                    <HeiwaBtn className='heiwaBtn' onClick={nextPage} />
+                    <SyouwaBtn className='syouwaBtn' onClick={nextPage} />
                 </div>
             </div>
         </main>

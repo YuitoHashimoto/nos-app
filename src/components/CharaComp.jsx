@@ -1,7 +1,21 @@
 import { SelectBtn, CancelBtn } from './icons/index'
-
+import { useNavigate } from 'react-router-dom';
 
 const CharaComp = () => {
+    const navigate = useNavigate();
+
+    const nextPage = () => {
+        navigate({
+            pathname: '/home'
+        })
+    }
+
+    const backPage = () => {
+        navigate({
+            pathname: '/name'
+        })
+    }
+
      return (
          <main className={'charaComp'}>
             <div className={'charaComp__box'}>
@@ -13,8 +27,8 @@ const CharaComp = () => {
                 </div>
             </div>
             <div className={'btnArea'}>
-                <SelectBtn />
-                <CancelBtn />
+                <SelectBtn onClick={nextPage} />
+                <CancelBtn onClick={backPage} />
             </div>
          </main>
      )

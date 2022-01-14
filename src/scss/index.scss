@@ -694,4 +694,326 @@ main {
 // matchingView
 .matchingView {
     @include stripeBack();
+    padding: 7.3rem 0 0 0;
+    &__content {
+        &__titleArea {
+            width: 22.6rem;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .quizTypeTitle {
+                margin: 0 auto;
+            }
+            .itemRank {
+                width: 19.0rem;
+                display: flex;
+                justify-content: space-between;
+                margin: 1.2rem 0 0 0;
+                &__txt {
+                    font-size: 1.6rem;
+                }
+                &__rank {
+                    display: flex;
+                    align-items: center;
+                    p {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            .matchingTxt {
+                font-size: 2.4rem;
+                margin: 2.4rem 0 0 0;
+            }
+        }
+        &__playersArea {
+            width: 32.0rem;
+            margin: 0  auto;
+            .playerNum {
+                 text-align: right;
+                 font-size: 1.6rem;
+            }
+            &__box {
+                margin: 0.8rem 0 0 0;
+                 .player {
+                     position: relative;
+                      width: 32.0rem;
+                      height: 12.8rem;
+                      border-radius: 1.0rem;
+                      display: flex;
+                      align-items: center;
+                      margin: 0 0 1.6rem 0;
+                    .overlayBack {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: #8EAEC1;
+                        mix-blend-mode: multiply;
+                        border-radius: 1.0rem;
+                    }
+                    &__chara {
+                        z-index: 100;
+                        width: 8.0rem;
+                        height: 10.8rem;
+                        background-color: #fff;
+                        background-image: url('../img/matchingChara.svg');
+                        background-position: center;
+                        border-radius: 1.0rem;
+                        margin: 0 0 0 1.6rem;
+                    }
+                    &__stats {
+                        height: 10.8rem;
+                        z-index: 100;
+                        color: #fff;
+                        margin: 0 0 0 2.4rem;
+                        &__name {
+                            font-size: 1.6rem;
+                        }
+                        &__item {
+                            display: flex;
+                            align-items: center;
+                            margin: 0.8rem 0 0 0;
+                            .itemIcon {
+                                width: 5.3rem;
+                                height: 5.7rem;
+                                border-radius: 0.4rem;
+                                background-color: #fff;
+                                background-image: url('../img/itemDemoMini.svg');
+                                background-position: center;
+                            }
+                            .itemTxt {
+                                display: flex;
+                                align-items: center;
+                                margin: 1.6rem;
+                                &__rank {
+                                    display: flex;
+                                    align-items: center;
+                                    p {
+                                        font-size: 1.6rem;
+                                    }
+                                }
+                                &__itemName {
+                                    font-size: 1.2rem;
+                                    margin: 0.7rem;
+                                }
+                            }
+                        }
+                    }
+                 }
+            }
+        }
+    }
+}
+
+// quizStart
+.quizStart {
+    @include stripeBack();
+    padding: 25.8rem 0 0 0;
+    &__content {
+        width: 22.0rem;
+        height: 24.8rem;
+        margin: 0  auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+// twoChoice
+.twoChoice {
+    @include stripeBack();
+    &__content {
+        padding: 6.1rem 0 0 0;
+        &__titleArea {
+            width: 18.2rem;
+            margin: 0 auto 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            p {
+                margin: 1.6rem 0 0 0;
+                font-size: 2.4rem;
+            }
+        }
+        &__quizTxt {
+            width: 36.6rem;
+            padding: 2.6rem 2.0rem;
+            background-color: #fff;
+            margin: 1.6rem auto 0 auto;
+            p {
+                font-size: 1.6rem;
+            }
+        }
+        &__quizChoice {
+            width: 36.0rem;
+            height: 17.6rem;
+            margin: 1.6rem auto 0 auto;
+            display: flex;
+            justify-content: space-between;
+
+            // ユーザーの選択によって変更
+            .true {
+                width: 17.6rem;
+                height: 17.6rem;
+                border: 0.3rem solid #EF9DAC;
+                border-radius: 0.6rem;
+                background-color: #fff;
+                background-image: url('../img/choiceTrue.svg');
+                background-position: center;
+            }
+            .trueSel {
+                width: 17.6rem;
+                height: 17.6rem;
+                border: 0.3rem solid #EF9DAC;
+                border-radius: 0.6rem;
+                background-color: #F42D53;
+                background-image: url('../img/selChoiceTrue.svg');
+                background-position: center;
+            }
+            .false {
+                width: 17.6rem;
+                height: 17.6rem;
+                border: 0.3rem solid #74C5F8;
+                border-radius: 0.6rem;
+                background-color: #fff;
+                background-image: url('../img/choiceFalse.svg');
+                background-position: center;
+            }
+            .selFalse {
+                width: 17.6rem;
+                height: 17.6rem;
+                border: 0.3rem solid #74C5F8;
+                border-radius: 0.6rem;
+                background-color: #3D80D9;
+                background-image: url('../img/selChoiceFalse.svg');
+                background-position: center;
+            }
+            // ユーザーの選択によって変更
+        }
+        .timeBar {
+            position: relative;
+            width: 35.8rem;
+            height: 2.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0.8rem auto 0 auto;
+            .timeIcon {
+                z-index: 100;
+            }
+            &__box {
+                position: absolute;
+                z-index: 50;
+                left: 1.6rem;
+                width: 30.7rem;
+                height: 1.4rem;
+                border: 0.3rem solid #000333;
+                border-radius: 0.7rem;
+                &__num {
+                    width: 50%;
+                    height: 100%;
+                    background: #54C985;
+                    border-radius: 0.7rem;
+                }
+            }
+            &__txt {
+                font-size: 1.0rem;
+            }
+        }
+        .answerBtn {
+            display: block;
+            margin: 4.8rem auto 0 auto;
+        }
+        .gamePlayers {
+            position: relative;
+            width: 34.0rem;
+            display: flex;
+            justify-content: space-between;
+            margin: 3.4rem auto 0 auto;
+
+            // 正誤によって変更
+            .userSelFalseBox {
+                margin: 2.5rem 0 0 0;
+            }
+            // 正誤によって変更
+
+            &__player {
+                position: relative;
+                width: 8.4rem;
+                height: 10.6rem;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                .playerItem {
+                    position: absolute;
+                    top: -0.8rem;
+                    left: -0.8rem;
+                    z-index: 100;
+                     width: 3.0rem;
+                     height: 3.0rem;
+                     background-color: #fff;
+                     background-image: url('../img/gameItemDemo.svg');
+                     background-position: center;
+                     box-shadow: 1px 5px 11px -8px rgba(0,0,0,0.6);
+                }
+                .playerIcon {
+                    position: relative;
+                    width: 8.4rem;
+                    height: 8.4rem;
+                    &__chara {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        background-image: url('../img/gameCharaDemo.svg');
+                        background-position: center;
+
+                        // 正誤によって変更
+                        .userSel {
+                            position: absolute;
+                            z-index: 100;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                        }
+                        .userSelTrue {
+                            background-image: url('../img/trueIconMini.svg');
+                            background-position: center;
+                        }
+                        .userSelFlase {
+                            background-image: url('../img/falseIconMini.svg');
+                            background-position: center;
+                        }
+                        // 正誤によって変更
+                    }
+                    &__num {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                         width: 2.5rem;
+                         height: 2.5rem;
+                         border-radius: 50%;
+                         background-color: #FDD154;
+                         p {
+                             font-size: 2.0rem;
+                             color: #8C4300;
+                             text-align: center;
+                             margin: 0.3rem 0 0 0;
+                         }
+                    }
+                }
+                .playerName {
+                    font-size: 1.3rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }

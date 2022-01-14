@@ -1,6 +1,17 @@
 import { BattleTxt, SoloBattleBtn, MultiBattleBtn, MissionBtn } from './icons/index'
+import { useNavigate } from 'react-router-dom';
+
 
 const BattleHome = () => {
+    const navigate = useNavigate();
+
+    const nextPage = () => {
+        navigate({
+            pathname: '/genselect'
+        })
+    }
+
+
     return (
         <main className="battleHome">
             <div className='battleHome__content'>
@@ -8,13 +19,13 @@ const BattleHome = () => {
                     <BattleTxt />
                 </div>
                 <div className='battleBtns soloBattleBtn'>
-                    <SoloBattleBtn />
+                    <SoloBattleBtn onClick={nextPage} />
                 </div>
                 <div className='battleBtns multiBattleBtn'>
-                    <MultiBattleBtn />
+                    <MultiBattleBtn onClick={nextPage} />
                 </div>
                 <div className='battleBtns missionBtn'>
-                    <MissionBtn />
+                    <MissionBtn onClick={nextPage} />
                 </div>
             </div>
         </main>

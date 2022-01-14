@@ -1,7 +1,15 @@
 import { SelectBtn } from './icons/index'
-
+import { useNavigate } from 'react-router-dom';
 
 const NewName = () => {
+    const navigate = useNavigate();
+
+    const nextPage = () => {
+        navigate({
+            pathname: '/charaselect'
+        })
+    }
+
     return (
         <main className={'newName'}>
             <div className={'newName__box'}>
@@ -9,7 +17,7 @@ const NewName = () => {
                 <input type="text" className={'newName__box__input'} placeholder="名前を入力(8文字まで)" maxLength="8" />
             </div>
             <div className={'btnArea'}>
-                <SelectBtn />
+                <SelectBtn onClick={nextPage} />
             </div>
         </main>
     )
