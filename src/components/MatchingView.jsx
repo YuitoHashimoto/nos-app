@@ -1,7 +1,21 @@
 import { QuizTypeTitle, BlackStarIcon, StarIcon } from './icons/index'
+import firebase from '../firebase'
+import { useEffect, useState } from 'react';
 
 
 const MatchingView = () => {
+    const [uid, setUid] = useState("")
+
+    useEffect( () => {
+        firebase.auth().onAuthStateChanged(async (user) => {
+            const userRef = firebase.firestore().collection('users').doc(user.uid)
+            userRef.get().then((doc) => {
+                setUid(doc.data().name)
+            });
+            
+        });
+    },[]);
+
     return (
         <main className='matchingView'>
             <div className='matchingView__content'>

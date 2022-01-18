@@ -1,14 +1,44 @@
 import { ItemSelTitle, ItemSelTxt, StarIcon, SelectBtn } from './icons/index'
 import { useNavigate } from 'react-router-dom';
-
+import firebase from '../firebase'
+import { useEffect, useState } from 'react';
 
 const ItemSelect = () => {
     const navigate = useNavigate();
+    const [uid, setUid] = useState("");
+    const [roomList, setRoomList] = useState();
+
+    useEffect( () => {
+        firebase.auth().onAuthStateChanged(async (user) => {
+            const userRef = firebase.firestore().collection('users').doc(user.uid)
+            setUid(user.uid)
+
+            const roomRef = firebase.database().ref("Rooms");
+            roomRef.on("value", (snapshot) => {
+                const rooms = snapshot.val()
+                const roomList = [];
+                for (let id in rooms) {
+                    roomList.push({id, ...rooms[id]})
+                };
+                setRoomList(roomList)
+            })
+
+        });
+    },[]);
 
     const nextPage = () => {
-        navigate({
-            pathname: '/matching'
-        })
+        roomList.forEach(val => {
+            if ( val.users.length < 3 ) {
+                const joinRef = firebase.database().ref("Rooms").child(val.id);
+                val.users.push(uid);
+                joinRef.set(val);
+
+                navigate({
+                    pathname: '/matching',
+                    search: `?roomId=${val.id}`
+                })
+            }
+        });
     }
 
 

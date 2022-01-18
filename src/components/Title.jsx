@@ -1,14 +1,26 @@
 import { StartBtn, TitleLogo } from './icons/index'
-import { useNavigate } from 'react-router-dom';
 
+import { useNavigate } from 'react-router-dom';
+import firebase from '../firebase'
 
 const Title = () => {
     const navigate = useNavigate();
 
     const nextPage = () => {
-        navigate({
-            pathname: '/name'
-        })
+        firebase.auth().onAuthStateChanged(async (user) => {
+            // 未ログイン時
+            if (!user) {
+                firebase.auth().signInAnonymously();
+            }
+            // ログイン時
+            else {
+                // TODO: ログインしているときにやる処理...
+                console.log(user);
+                navigate({
+                    pathname: '/name'
+                })
+            }
+        });
     }
 
     return (
