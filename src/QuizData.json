@@ -1,0 +1,36 @@
+{
+    "QuizData": {
+        "quiz": [
+            {
+                "id": 1,
+                "type": "twoChoice",
+                "text": "タピオカティーが初めて流行ったのは、1990年代である。",
+                "answers": [
+                    {"content": 0, "choice": true},
+                    {"content": 1, "choice": false}
+                ]
+            },
+            {
+                "id": 2,
+                "type": "twoChoice",
+                "text": "ファミリー・コンピュータを開発したのはAppleという会社である。",
+                "answers": [
+                    {"content": 0, "choice": true},
+                    {"content": 1, "choice": false}
+                ]
+            }
+
+        ]
+    },
+    "Rooms": {
+        "-MtehK7-q4xfnjaLdE3-": {
+            "id": "-MtehK7-q4xfnjaLdE3-",
+            "round": 1,
+            "users": [
+                "0GQJVZs2hrgpcwTXIvFlT7tACJO2",
+                "1DRDpevnS1UBgzm3fod2HypLx2J2",
+                "1DRDpevnS1UBgzm3fod2HypLx2J2"
+            ]
+        }
+    }
+}

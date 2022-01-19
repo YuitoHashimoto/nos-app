@@ -1,20 +1,62 @@
 import { QuizTypeTitle, BlackStarIcon, StarIcon } from './icons/index'
+import { UserBox } from './index'
 import firebase from '../firebase'
 import { useEffect, useState } from 'react';
-
+import { useLocation, useNavigate } from "react-router-dom";
 
 const MatchingView = () => {
-    const [uid, setUid] = useState("")
+    const navigate = useNavigate();
+    const [userList, setUserList] = useState();
+    const [userName, setUserName] = useState();
+    const location = useLocation();
+    const params = new URLSearchParams(location.search);
 
+    // 初回処理
     useEffect( () => {
-        firebase.auth().onAuthStateChanged(async (user) => {
-            const userRef = firebase.firestore().collection('users').doc(user.uid)
-            userRef.get().then((doc) => {
-                setUid(doc.data().name)
+        const userRef = firebase.database().ref("Rooms").child(params.get('roomId'))
+        userRef.on('value', (snapshot) => {
+            const users = snapshot.val()
+            const userList = []
+            const userNames = []
+            const promised = []
+            users.users.forEach(val => {
+                userList.push(val)
             });
-            
-        });
+            userList.forEach(val => {
+                promised.push(
+                    new Promise ((resolve) => {
+                        const nameRef = firebase.firestore().collection('users').doc(val);
+                        nameRef.get().then((doc) => {
+                            userNames.push(doc.data().name)
+                            resolve()
+                        });
+                    })
+                )
+            })
+
+            Promise.all(promised)
+            .then(() => {
+                setUserName(userNames);
+            })
+            setUserList(userList)
+        })
     },[]);
+
+    useEffect(() => {
+        const userCount = userName;
+        if ( userCount ) {
+            if ( userCount.length === 3 ) {
+                setTimeout(() => {
+                    // 入室したルームに応じたURLへ飛ばす
+                    navigate({
+                        pathname: '/quizstart',
+                        search: `?roomId=${params.get('roomId')}`
+                    })
+
+                }, 3000);
+            }
+        }
+    })
 
     return (
         <main className='matchingView'>
@@ -33,57 +75,7 @@ const MatchingView = () => {
                 <div className='matchingView__content__playersArea'>
                     <p className='playerNum'>3/3</p>
                     <div className='matchingView__content__playersArea__box'>
-                        <div className='player'>
-                            <div className='overlayBack'></div>
-                            <div className='player__chara'></div>
-                            <div className='player__stats'>
-                                <p className='player__stats__name'>ヤマハ音楽教室</p>
-                                <div className='player__stats__item'>
-                                    <div className='itemIcon'></div>
-                                    <div className='itemTxt'>
-                                        <div className='itemTxt__rank'>
-                                            <StarIcon />
-                                            <p>5</p>
-                                        </div>
-                                        <p className='itemTxt__itemName'>ラムネ棒</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='player'>
-                            <div className='overlayBack'></div>
-                            <div className='player__chara'></div>
-                            <div className='player__stats'>
-                                <p className='player__stats__name'>ヤマハ音楽教室</p>
-                                <div className='player__stats__item'>
-                                    <div className='itemIcon'></div>
-                                    <div className='itemTxt'>
-                                        <div className='itemTxt__rank'>
-                                            <StarIcon />
-                                            <p>5</p>
-                                        </div>
-                                        <p className='itemTxt__itemName'>ラムネ棒</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='player'>
-                            <div className='overlayBack'></div>
-                            <div className='player__chara'></div>
-                            <div className='player__stats'>
-                                <p className='player__stats__name'>ヤマハ音楽教室</p>
-                                <div className='player__stats__item'>
-                                    <div className='itemIcon'></div>
-                                    <div className='itemTxt'>
-                                        <div className='itemTxt__rank'>
-                                            <StarIcon />
-                                            <p>5</p>
-                                        </div>
-                                        <p className='itemTxt__itemName'>ラムネ棒</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {userName ? userName.map((user, index) => (< UserBox user={user} key={index} />)) : ""}
                     </div>
                 </div>
             </div>

@@ -25,3 +25,6 @@ export {default as ItemSelect} from './ItemSelect'
 export {default as MatchingView} from './MatchingView'
 export {default as QuizStart} from './QuizStart'
 export {default as TwoChoice} from './TwoChoice'
+
+// 部品
+export {default as UserBox} from './UserBox'
