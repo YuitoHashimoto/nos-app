@@ -7,10 +7,25 @@ import firebase from '../firebase'
 
 const TwoChoice = () => {
     // ステート管理
+    const [trueBtn, setTrueBtn] = useState(false);
+    const [falseBtn, setFalseBtn] = useState(false);
+    const [time, setTime] = useState(false);
+    const [userSel, setUserSel] = useState();
+    const [choice, setChoice] = useState(false);
+    const [answerData, setAnswerData] = useState([
+        {
+            choice: true,
+            content: 0
+        },
+        {
+            choice: false,
+            content: 1
+        },
+    ])
     const [quizData, setQuizData] = useState({
         "id": 1,
         "type": "twoChoice",
-        "text": "タピオカティーが初めて流行ったのは、1990年代である。",
+        "text": "タあああ",
         "answers": [
             {"content": 0, "choice": true},
             {"content": 1, "choice": false}
@@ -19,7 +34,7 @@ const TwoChoice = () => {
     const [roomData, setRoomData] = useState({
         id: "dada",
         round: 1,
-        user: ["", "", ""]
+        user: ["",  "",  ""]
     })
     const [nowText, setNowText] = useState("");
     const [timeTxt, setTimeTxt] = useState(30)
@@ -47,26 +62,67 @@ const TwoChoice = () => {
             const quizRef = firebase.database().ref("QuizData").child("quiz")
             quizRef.on("value", (snapshot) => {
                 setQuizData(snapshot.val()[round-1]);
+                setAnswerData(snapshot.val()[round-1].answers)
             })
-            timer();
+            timer();    
         })
     },[])
 
+    // タイマー処理
     const timer = () => {
-        let time = 30;
+        let time = 5;
         const timeBar = document.getElementById('timeBar');
-
         const interval = setInterval(() => {
             time -=1;
             setTimeTxt(time);
             timeBar.style.width = "4%"
-            if (time === 0) {
+            if (time === 0) {;
                 clearInterval(interval);
+                setTime(true);
             }
         }, 1000);
     }
 
-    console.log(roomData);
+    // タイマー終了後答え合わせ
+    useEffect(() => {
+        answerData.forEach(val => {
+            console.log(userSel);
+            if (userSel === val.content) {
+                setChoice(val.choice)
+            }
+        });
+    },[time])
+
+    // マルボタン
+    const trueBtnFunc = (e) => {
+        if ( !trueBtn ) {
+            const truebtn = document.querySelector('.true');
+            const falsebtn = document.querySelector('.false');
+            falsebtn.classList.remove("falseSel")
+            truebtn.classList.add("trueSel");
+            setTrueBtn(true);
+            setFalseBtn(false);
+            setUserSel(0);
+        }
+    }
+
+    // バツボタン
+    const falseBtnFunc = (e) => {
+        if ( !falseBtn ) {
+            const falsebtn = document.querySelector('.false');
+            const truebtn = document.querySelector('.true');
+            falsebtn.classList.add("falseSel")
+            truebtn.classList.remove("trueSel");
+            setFalseBtn(true);
+            setTrueBtn(false);
+            setUserSel(1);
+        }
+    }
+
+    // 答え合わせ
+    const answerFunc = () => {
+
+    }
     console.log(quizData);
 
     return (
@@ -80,8 +136,8 @@ const TwoChoice = () => {
                     <p>{quizData.text}</p>
                 </div>
                 <div className="twoChoice__content__quizChoice">
-                    <div className='true trueSel'></div>
-                    <div className='false'></div>
+                    <div className='true' onClick={trueBtnFunc}></div>
+                    <div className='false' onClick={falseBtnFunc}></div>
                 </div>
                 <div className='timeBar'>
                     <TimeIcon className='timeIcon' />
