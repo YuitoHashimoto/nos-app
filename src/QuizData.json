@@ -19,7 +19,6 @@
                     {"content": 1, "choice": false}
                 ]
             }
-
         ]
     },
     "Rooms": {
@@ -28,8 +27,29 @@
             "round": 1,
             "users": [
                 "0GQJVZs2hrgpcwTXIvFlT7tACJO2",
-                "1DRDpevnS1UBgzm3fod2HypLx2J2",
-                "1DRDpevnS1UBgzm3fod2HypLx2J2"
+                "DtXmIUuDnlgPQJnKjzEBWDNnUAi1",
+                "SRW5kskS27UP4gYSv64XDUrQ5QB2"
+            ],
+            "answers": [
+                [
+                    {
+                        "user": "0GQJVZs2hrgpcwTXIvFlT7tACJO2",
+                       "choice": false
+                    }    
+                ],
+                [
+                    {
+                        "user": "0GQJVZs2hrgpcwTXIvFlT7tACJO2",
+                       "choice": false
+                    }    
+                ],
+                [
+                    {
+                        "user": "0GQJVZs2hrgpcwTXIvFlT7tACJO2",
+                       "choice": false
+                    }    
+                ]
+
             ]
         }
     }

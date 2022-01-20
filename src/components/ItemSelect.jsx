@@ -48,7 +48,7 @@ const ItemSelect = () => {
                     // 入室したルームに応じたURLへ飛ばす
                     navigate({
                         pathname: '/matching',
-                        search: `?roomId=${val.id}`
+                        search: `?roomId=${val.id}&?round=${val.round}`
                     })
                 }
             } else {

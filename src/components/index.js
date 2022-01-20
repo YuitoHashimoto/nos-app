@@ -28,3 +28,4 @@ export {default as TwoChoice} from './TwoChoice'
 
 // 部品
 export {default as UserBox} from './UserBox'
+export {default as GamePlayer} from './GamePlayer'

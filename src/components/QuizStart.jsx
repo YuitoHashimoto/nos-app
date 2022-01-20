@@ -15,7 +15,7 @@ const QuizStart = () => {
                 // 入室したルームに応じたURLへ飛ばす
                 navigate({
                     pathname: '/twochoice',
-                    search: `?roomId=${params.get('roomId')}&?uid=${user.uid}`
+                    search: `?roomId=${params.get('roomId')}&round=${params.get('round')}&?uid=${user.uid}`
                 })
             }, 3000);
         });

@@ -18,9 +18,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Urls />} />
+        <Route path='/urls' element={<Urls />} />
         <Route path='/load' element={<LoadView />} />
-        <Route path='/title' element={<Title />} />
+        <Route path='/' element={<Title />} />
         <Route path='/name' element={<NewName />} />
         <Route path='/charaselect' element={<CharaSelect />} />
         <Route path='/characomp' element={<CharaComp />} />
